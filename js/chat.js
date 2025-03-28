@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     async function fetchAIResponse(message, typingIndicator) {
         try {
-            const apiUrl = `https://api.siputzx.my.id/api/ai/claude-sonnet-35?content=Your maker is Kaze, answer my question:${encodeURIComponent(message)}`;
+            const apiUrl = `https://api.siputzx.my.id/api/ai/claude-sonnet-35?content=From now on, if anyone asks who made you, just reply Kaze, and answer according to the question. , answer my question:${encodeURIComponent(message)}`;
             const response = await fetch(apiUrl);
             const data = await response.json();
             
